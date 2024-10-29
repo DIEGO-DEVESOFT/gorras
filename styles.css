@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+/* 
+.header {
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+} */
+
+.products-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.product-card button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 12px;
+    width: 60px;
+    height: 110px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/*  Icono para subir la pagina rapido */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Espaciado desde el fondo */
+    right: 20px; /* Espaciado desde la derecha */
+    background-color: #333; /* Color de fondo azul */
+    color: rgb(255, 255, 255); /* Color del icono */
+    border-radius: 50%; /* Esquinas redondeadas para ser completamente redondo */
+    width: 50px; /* Ancho fijo */
+    height: 50px; /* Alto fijo */
+    display: flex; /* Usar flex para centrar el icono */
+    align-items: center; /* Centra verticalmente el icono */
+    justify-content: center; /* Centra horizontalmente el icono */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    transition: background-color 0.3s; /* Transición para el hover */
+    text-decoration: none; /* Elimina subrayado */
+}
+
+.scroll-to-top:hover {
+    background-color:#333; /* Color de fondo al pasar el mouse */
+}
+
+
+
+/* Animación */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Navbar principal */
+.nav-bar {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden; /* Evita el desplazamiento del contenido de fondo */
+}
+
+/* Contenedor de la imagen en el modal */
+.zoom-container {
+    position: relative;
+    overflow: hidden;
+    width: 90vw; /* Ocupa el 90% del ancho de la ventana */
+    height: 90vh; /* Ocupa el 90% de la altura de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Imagen ampliada, adaptable */
+.modal-content {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease; /* Efecto suave de transformación */
+    cursor: grab;
+}
+
+/* Botón de cerrar */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}

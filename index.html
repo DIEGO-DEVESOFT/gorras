@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce de Gorras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar Principal -->
+    <div class="nav-bar" style="text-align: left; padding: 30px;">
+        <p id="changingText">"Gorra California"</p>
+    </div>
+
+    <!-- Header -->
+    <!-- <header class="header">
+        <h1>Gorras Exclusivas</h1>
+        <p>Encuentra la mejor colección de gorras</p>
+    </header> -->
+
+    <!-- Sección de productos -->
+    <section class="products-section">
+        <h2>Nuestros Productos</h2>
+        <div class="product-grid">
+            <!-- Tarjetas de producto -->
+            <div class="product-card" data-aos="fade-up">
+                <img  src="img/gorra1.png" alt="Gorra 1"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 1</p>
+                <!-- <h3>Gorra Militar</h3>
+                <p>Resistente, ajustable, estilo clásico.</p> -->
+                <p class="price">$45.000</p>
+                <!-- <button>Comprar</button> -->
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra2.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 2</p>
+                <!-- <h3>Gorra CityCap</h3>
+                <p>Perfecta para la ciudad</p> -->
+                <p class="price">$45.000</p>
+                
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra3.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 3</p>
+                <!-- <h3>Gorra Militar</h3>
+                <p>Cambia tu estilo</p> -->
+                <p class="price">$45.000</p>
+                
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra4.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 4</p>
+                <!-- <h3>Gorra Militar</h3>
+                <p>Cambia tu look</p> -->
+                <p class="price">$45.000</p>
+                
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra5.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 5</p>
+                <!-- <h3>Gorra Militar Elegante</h3>
+                <p>Exclusiva en su categoría</p> -->
+                <p class="price">$45.000</p>
+                
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra6.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 6</p>
+                <!-- <h3>Gorra  Clásica</h3>
+                <p>Exclusiva en su categoría</p> -->
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra7.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 7</p>
+                <!-- <h3>Gorra de Playa</h3>
+                <p>Perfecta para tomar el sol</p> -->
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra8.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 8</p>
+                <!-- <h3>Gorra de Sábado</h3>
+                <p>Perfecta para salir con amigos</p> -->
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra9.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 9</p>
+                <!-- <h3>Gorra Ajedrez</h3>
+                 -->
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra10.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 10</p>
+                <!-- <h3>Gorra Ajedrez</h3>
+                 -->
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra11.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 11</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra12.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 12</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra13.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 13</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra14.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 14</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra15.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 15</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra16.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 16</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra17.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 17</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra18.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 18</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra19.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 19</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra20.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 20</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra21.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 21</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra22.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 22</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra23.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 23</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra24.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 24</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra25.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 25</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra26.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 26</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra27.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 27</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra28.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 28</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra29.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 29</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra30.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 30</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra31.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 31</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra32.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 32</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra33.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 33</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra34.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 34</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra35.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 35</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra36.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 36</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra37.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 37</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra38.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 38</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra39.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 39</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra40.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 40</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra41.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 41</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra42.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 42</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra43.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 43</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra44.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 44</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra45.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 45</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra46.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 46</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra47.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 47</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra48.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 48</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra49.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 49</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra50.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 50</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra51.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 51</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra52.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 52</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra53.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 53</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra54.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 54</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra55.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 55</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra56.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 56</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra57.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 57</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra58.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 58</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra59.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 59</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra60.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 60</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra61.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 61</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra62.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 62</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra63.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 63</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra64.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 64</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra65.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)"  >
+                <p class="price">N° 65</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra66.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)"  >
+                <p class="price">N° 66</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra67.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)" >
+                <p class="price">N° 67</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div>
+
+            <!-- <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/gorra68.png" alt="Gorra 2"  class="product-image" onclick="openModal(this)">
+                <p class="price">N° 68</p>
+                
+                
+                <p class="price">$45.000</p>
+                
+            </div> -->
+
+
+            <!-- Producto -->
+<div class="product-card" data-aos="fade-up" data-aos-delay="100">
+    <img src="img/gorra68.png" alt="Gorra 2" class="product-image" onclick="openModal(this)">
+    <p class="price">N° 68</p>
+    <p class="price">$45.000</p>
+</div>
+
+<!-- Modal para imagen ampliada con efecto de desplazamiento adaptativo -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="zoom-container">
+        <img class="modal-content" id="expandedImg">
+    </div>
+</div>
+
+            
+            <!-- Añadir más tarjetas si es necesario -->
+        </div>
+    </section>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.link/6ncist" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+   <!-- Icono de subir a la parte superior -->
+<a href="#" class="scroll-to-top" id="scrollToTop">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<footer>
+
+    <p style="background-color: #333; color: white;border-bottom: none;padding: 15px;text-align: center;">&copy;2024 California<br>
+         TecnoMark.ia</p>
+   
+</footer>
+
+</body>
+</html>
